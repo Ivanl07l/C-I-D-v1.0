@@ -5,14 +5,14 @@ body {
     padding: 0;
     background-color: #f4f4f9;
 }
-h1 {
+h1, h2 {
     margin-top: 20px;
 }
 .dice-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .dice {
     width: 100px;
@@ -24,7 +24,6 @@ h1 {
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateY(0deg);
     transition: transform 1s;
 }
 .dice-face {
@@ -33,7 +32,6 @@ h1 {
     height: 100%;
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,3 +44,13 @@ h1 {
 .dice-face:nth-child(4) { transform: rotateY(-90deg) translateZ(50px); }
 .dice-face:nth-child(5) { transform: rotateX(90deg) translateZ(50px); }
 .dice-face:nth-child(6) { transform: rotateX(-90deg) translateZ(50px); }
+#playerTable {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 50%;
+}
+#playerTable th, #playerTable td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
