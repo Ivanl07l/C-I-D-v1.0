@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Dice Roll</title>
+    <title>Custom Dice Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Custom Dice Roll</h1>
+    <h1>Custom Dice Game</h1>
     <div class="dice-container">
         <div class="dice" id="dice1">
             <div class="dice-inner">
@@ -43,6 +43,35 @@
     <button id="rollDice">Roll Dice</button>
     <div id="results"></div>
 
+    <h2>Player Positions</h2>
+    <table id="playerTable">
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Before</th>
+                <th>After</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ivan</td>
+                <td>Alexis</td>
+                <td>Denn</td>
+            </tr>
+            <tr>
+                <td>Denn</td>
+                <td>Ivan</td>
+                <td>Alexis</td>
+            </tr>
+            <tr>
+                <td>Alexis</td>
+                <td>Denn</td>
+                <td>Ivan</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="scores"></div>
     <script src="script.js"></script>
 </body>
 </html>
